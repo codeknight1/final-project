@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+
+nav {
+  display: none;
+}
+@media (min-width: 992px) {
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 3.5rem;
+    background: #fff;
+  }
+  nav .logo_search {
+    width: inherit;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 3rem;
+    border-bottom: 3px solid  #eaeaea;
+  }
+   nav .logo_search .inout a {
+    margin: 0 2rem;
+  }
+  nav .logo_search .wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  nav .logo_search .wrap form {
+    border-radius: .5rem;
+    background: rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  nav .logo_search .wrap form input {
+    border-radius: .5rem;
+    border: none;
+    width: 100%;
+    height: 100%;
+    font-size: .6em;
+    display: block;
+    background: #eaeaea;
+    padding: 6px 10em 6px 3em;
+  }
+  nav .logo_search .wrap form button {
+    position: absolute;
+    top: 2px;
+    left: .5rem;
+    width: 20px;
+    height: 100%;
+    border-radius: 50%;
+    background: none;
+    border: none;
+  }
+}
