@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tekx - Sign In</title>
+    <link rel="stylesheet" href="./css/signin.css">
+    <!-- Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Top Banner Header -->
+        <header class="header-bg">
+            <svg class="header-svg" viewBox="0 0 375 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0H375V120L100 190L0 140V0Z" fill="#31194D"/>
+                <path d="M0 130L95 180L375 100V120L100 190L0 140V130Z" fill="#E63946"/>
+            </svg>
+            <div class="logo-container">
+                <img src="asset/images/mmm.png" alt="Tekx Logo" class="logo">
+            </div>
+        </header>
+
+        <!-- Main Sign In Form -->
+        <main class="form-wrapper">
+            <h2 class="title">SIGN IN</h2>
+
+            <form action="#" class="signin-form">
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="abc@gmail.com" required>
+                </div>
+
+                <div class="input-group password-group">
+                    <label for="password">Password</label>
+                    <div class="password-input-wrapper">
+                        <input type="password" id="password" value="********" required>
+                        <i class="bx bx-hide toggle-icon" id="togglePassword"></i>
+                    </div>
+                </div>
+
+                <p class="signup-link">
+                    You don't have an account before? <a href="signup.html">SIGN UP</a>
+                </p>
+            </form>
+        </main>
+    </div>
+
+    <script>
+        const togglePassword = document.querySelector('#togglePassword');
+        const password = document.querySelector('#password');
+
+        togglePassword.addEventListener('click', function () {
+            const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+            password.setAttribute('type', type);
+            this.classList.toggle('bx-show');
+            this.classList.toggle('bx-hide');
+        });
+    </script>
+</body>
+</html>

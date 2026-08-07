@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 390px;
+    height: 844px;
+    background: #ffffff;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Top Decorative Header */
+.header-bg {
+    position: relative;
+    height: 220px;
+    width: 100%;
+}
+
+.header-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+.logo-container {
+    position: absolute;
+    right: 40px;
+    top: 60px;
+    text-align: center;
+}
+
+.logo {
+    width: 90px;
+    height: auto;
+}
+
+/* Form Wrapper */
+.form-wrapper {
+    padding: 20px 30px;
+    flex: 1;
+}
+
+.title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #111111;
+    margin-bottom: 30px;
+    letter-spacing: 0.5px;
+}
+
+/* Form Elements */
+.signin-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input-group label {
+    font-size: 0.9rem;
+    color: #333333;
+    font-weight: 500;
+}
+
+.input-group input {
+    width: 100%;
+    height: 52px;
+    border: 1px solid #d0d0d0;
+    border-radius: 8px;
+    padding: 0 16px;
+    font-size: 0.95rem;
+    color: #555555;
+    background-color: #ffffff;
+    outline: none;
+}
+
+.input-group input:focus {
+    border-color: #31194D;
+}
+
+/* Password Input Specifics */
+.password-input-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.password-input-wrapper input {
+    padding-right: 45px;
+}
+
+.toggle-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.3rem;
+    color: #888888;
+    cursor: pointer;
+}
+
+/* Bottom Sign Up Prompt */
+.signup-link {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #333333;
+    margin-top: 30px;
+}
+
+.signup-link a {
+    color: #2D1B69;
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: 4px;
+}
