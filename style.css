@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: #423f3f;
+    background: #d7d7e9;
 }
 
 .top {
@@ -18,10 +18,41 @@ body {
     padding: 40px 30px;
 }
 
+/* MOBILE */
+@media (max-width: 600px) {
+    .top,
+    .form-box {
+        width: 100%;
+    }
+
+    .top {
+        height: 430px;
+        padding: 40px 25px;
+    }
+
+    .form-box {
+        padding: 40px 25px;
+        border-radius: 40px 40px 0 0;
+    }
+
+    .line {
+        width: 50px;
+    }
+}
+
+/* DESKTOP */
+@media (min-width: 601px) {
+    .top,
+    .form-box {
+        width: 500px;
+    }
+}
+
 .top h2 {
     font-size: 22px;
     margin-bottom: 30px;
 }
+
 
 .camera ,img{
     width: 150px;
