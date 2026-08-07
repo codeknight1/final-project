@@ -1,0 +1,284 @@
+/*==================================================
+  RESET
+==================================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+    background:#ffffff;
+    color:#222;
+    min-height:100vh;
+
+}
+
+
+/*==================================================
+ NAVBAR
+==================================================*/
+
+.navbar{
+
+    height:72px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:0 48px;
+
+    border-bottom:2px solid #ececec;
+
+    background:#fff;
+
+}
+
+
+.logo-small img{
+
+    width:58px;
+    display:block;
+
+}
+
+
+/*==================================================
+ SEARCH
+==================================================*/
+
+.search-box{
+
+    margin-left:-420px;
+
+    width:250px;
+    height:24px;
+
+    background:#ececec;
+
+    border-radius:30px;
+
+    display:flex;
+    align-items:center;
+
+    padding:0 14px;
+
+}
+
+.search-box i{
+
+    font-size:13px;
+    color:#000;
+
+    margin-right:10px;
+
+}
+
+.search-box input{
+
+    width:100%;
+    border:none;
+    outline:none;
+    background:transparent;
+
+    font-size:14px;
+
+}
+
+
+/*==================================================
+ SIGN OUT
+==================================================*/
+
+.logout{
+
+    text-decoration:none;
+
+    font-family:Georgia, serif;
+
+    color:#000;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+}
+
+
+/*==================================================
+ HERO
+==================================================*/
+
+.hero{
+
+    height:calc(100vh - 72px);
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+}
+
+
+/*==================================================
+ LOGO
+==================================================*/
+
+.logo-large{
+
+    margin-top:-80px;
+
+}
+
+.logo-large img{
+
+    width:180px;
+
+}
+
+
+/*==================================================
+ BUTTONS
+==================================================*/
+
+.buttons{
+
+    margin-top:150px;
+
+    display:flex;
+    gap:36px;
+
+}
+
+.btn{
+
+    width:132px;
+    height:50px;
+
+    text-decoration:none;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-family:Georgia, serif;
+    font-size:18px;
+
+    letter-spacing:.5px;
+
+    transition:.3s;
+
+}
+
+
+/* Filled */
+
+.btn-primary{
+
+    background:#25265d;
+
+    color:#fff;
+
+    border:1px solid #25265d;
+
+}
+
+.btn-primary:hover{
+
+    background:#1d1e48;
+
+}
+
+
+/* Outline */
+
+.btn-outline{
+
+    border:1px solid #25265d;
+
+    color:#25265d;
+
+    background:#fff;
+
+}
+
+.btn-outline:hover{
+
+    background:#25265d;
+
+    color:#fff;
+
+}
+
+
+/*==================================================
+ RESPONSIVE
+==================================================*/
+
+@media(max-width:992px){
+
+    .navbar{
+
+        padding:20px;
+
+        flex-wrap:wrap;
+
+        height:auto;
+
+        gap:20px;
+
+    }
+
+    .search-box{
+
+        margin-left:0;
+
+        width:100%;
+
+        order:3;
+
+    }
+
+    .logout{
+
+        margin-left:auto;
+
+    }
+
+    .logo-large img{
+
+        width:150px;
+
+    }
+
+    .buttons{
+
+        flex-direction:column;
+
+        margin-top:90px;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    .logo-large img{
+
+        width:120px;
+
+    }
+
+    .btn{
+
+        width:220px;
+
+    }
+
+}
