@@ -6,14 +6,14 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: #d7d7e9;
+    background: rgb(204, 200, 207);
 }
 
 .top {
     width: 390px;
     height: 430px;
     margin: auto;
-    background: #102b78;
+    background: blue;
     color: white;
     padding: 40px 30px;
 }
