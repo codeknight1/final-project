@@ -2,65 +2,140 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Tek-x-proceed</title>
-    <!-- style -->
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>TEK-X</title>
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+    <!-- Main CSS -->
     <link rel="stylesheet" href="style.css">
-    <!-- box icon -->
-    <link href="boxicons.min.css" rel="stylesheet">
-    
 </head>
+
 <body>
-        <nav class="nav">
-                <div class="logo_search">
-                    <div class="wrap">
-                            <img src="yyy.png" alt="tek-x-logo" class="nav-logo">
-                            <form action="">
-                                <input type="text">
-                                <button type="submit"><i class="bx bx bx-search" aria-hidden="true"></i></button>
-                            </form>
-                    </div>
-                       
-                        <div class="inout">
-                            <a href="#" class="sign">Sign in</a>
-                            <a href="#" class="sign">Sign out</a>
-                        </div>
-                </div>
-            </nav>
-  <section class="wrapper">
-          <div class="svg">
-            <img src="tek-x.svg" alt="" class="up">  
-            <div class="img-text">
-                <div class="icon">
-                     <img src="bxs-check-circle.svg" alt="profile pics" class="icon2"> 
-                     <p class="user"><span>Hurry!!!</span><br> verification Successful</p>
-                </div>
-                    
-            </div>
-      </div>
-      <div class="lower">
-        <div class="info">
-            <p class="name-paragraph">Name</p>
-            <input type="text" placeholder="Codeknight Dojo" class="name-input">
-            <p class="phone-paragraph">phone Number</p>
-            <input type="tel" placeholder="+111" class="phone-input">
-            <p class="birth-paragraph">Date of birth</p>
-            <input type="date" placeholder="20/10/1111" class="date-input">
-            <p class="gender-paragraph">Gender</p>
-            <input type="name" placeholder="female" class="gender-input">
-            <div class="end">
-                <div class="check">
-                    <input type="checkbox" id="checkbox" class="checkbox">
-                <label for="checkbox">I agree that the above data is correct</label>
-                </div>
-                <div class="bottons_control">
-                    <a class="proceed" href="signup.html">proceed</a>
-                </div>
+
+    <!-- =====================================================
+         DESKTOP / TABLET NAVBAR
+         ===================================================== -->
+    <header class="navbar">
+
+        <div class="logo-search-container">
+
+            <a
+                href="#"
+                class="logo-small"
+                aria-label="TEK-X home"
+            >
+                <img
+                    src="Assert/image/yyy.png"
+                    alt="TEK-X Logo"
+                >
+            </a>
+
+            <div
+                class="search-box"
+                role="search"
+            >
+                <i
+                    class="fa-solid fa-magnifying-glass"
+                    aria-hidden="true"
+                ></i>
+
+                <input
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                >
             </div>
 
-     </div>
-      </div> 
-  </section>
+        </div>
+
+        <div class="nav-actions">
+
+            <a
+                href="#"
+                class="nav-link"
+            >
+                Sign out
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         MAIN HERO
+         ===================================================== -->
+    <main class="hero">
+
+        <!-- =================================================
+             MOBILE DECORATIVE EDGE IMAGE
+
+             IMPORTANT:
+             This image is intentionally hidden on desktop
+             and displayed only on mobile through CSS.
+             ================================================= -->
+        <div
+            class="corner-image"
+            aria-hidden="true"
+        >
+            <img
+                src="Assert/svg/tek-x.svg"
+                alt=""
+            >
+        </div>
+
+
+        <!-- =================================================
+             MAIN TEK-X LOGO
+             ================================================= -->
+        <div class="logo-large">
+
+            <img
+                src="Assert/image/mmm.png"
+                alt="TEK-X"
+            >
+
+        </div>
+
+
+        <!-- =================================================
+             AUTHENTICATION BUTTONS
+             ================================================= -->
+        <div class="buttons">
+
+            <a
+                href="#"
+                class="btn btn-primary"
+            >
+                SIGN IN
+            </a>
+
+            <a
+                href="#"
+                class="btn btn-outline"
+            >
+                SIGN UP
+            </a>
+
+        </div>
+
+    </main>
+
 </body>
 </html>
