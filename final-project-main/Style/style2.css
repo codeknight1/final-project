@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+
+nav {
+  display: none;
+}
+@media (min-width: 992px) {
+  nav {
+    display: flex;
+    width: 100%;
+    height: 3.5rem;
+    background: #fff;
+  }
+  nav .logo_search {
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+    border-bottom: 3px solid #eaeaea;
+  }
+  nav .logo_search .inout a {
+    margin: 0 2rem;
+  }
+  nav .logo_search .wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav .logo_search .wrap form {
+    border-radius: 0.5rem;
+    background: rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  nav .logo_search .wrap form input {
+    border-radius: 0.5rem;
+    border: none;
+    width: 100%;
+    height: 100%;
+    font-size: 0.6em;
+    display: block;
+    background: #eaeaea;
+    padding: 6px 10em 6px 3em;
+  }
+  nav .logo_search .wrap form button {
+    position: absolute;
+    top: 2px;
+    left: 0.5rem;
+    width: 20px;
+    height: 100%;
+    border-radius: 50%;
+    background: none;
+    border: none;
+  }
+  nav .logo_search img {
+    widows: 5rem;
+    height: 5rem;
+  }
+  nav .logo_search .sign {
+    color: #000;
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
+}
+
+@media (min-width: 992px) {
+  .wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media (min-width: 992px) {
+  .wrapper .upper {
+    margin-bottom: 10rem;
+  }
+}
+@media (min-width: 992px) {
+  .wrapper .upper .svg-img {
+    width: 12rem;
+    height: 12rem;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+@media (min-width: 992px) {
+  .nav .logo_search .auth a {
+    padding: 1rem;
+  }
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+}
+@media (min-width: 992px) {
+  section {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+section header {
+  position: relative;
+}
+@media (min-width: 992px) {
+  section header {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 2px solid gray;
+    border-right-color: #eaeaea;
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+    border-left-color: #fff;
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  section header .up {
+    display: none;
+    width: 0;
+  }
+}
+section header .down {
+  width: 8rem;
+  height: 8rem;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 60%;
+  left: 50%;
+  padding: 1rem;
+}
+@media (min-width: 992px) {
+  section header .down {
+    position: absolute;
+    transform: translate(-50%, 0%);
+    top: 10%;
+    left: 50%;
+    width: 20rem;
+    height: 20rem;
+  }
+}
+section header .down_2 {
+  display: none;
+}
+@media (min-width: 992px) {
+  section header .down_2 {
+    display: block;
+    color: gray;
+    position: absolute;
+    transform: translate(-50%, 0%);
+    top: 60%;
+    left: 50%;
+    width: 60%;
+    padding: auto;
+    text-align: center;
+  }
+}
+section aside {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  section aside {
+    margin-top: 10rem;
+  }
+}
+section aside .text_auth {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+@media (min-width: 992px) {
+  section aside .text_auth {
+    display: block;
+  }
+}
+section aside .text_auth p {
+  font-size: 1.5em;
+  text-align: center;
+}
+section aside .input {
+  display: grid;
+  place-items: center;
+  margin-top: 3rem;
+}
+section aside .input .nin {
+  margin-right: 17rem;
+  font-size: 1.2em;
+  padding: 0.7rem;
+}
+section aside .input input {
+  width: 19rem;
+  height: 2.5rem;
+  padding: 0.4rem 0.4rem;
+  border-radius: 4px;
+  border: 1px solid lightgray;
+}
+section aside .botton {
+  display: grid;
+  place-items: center;
+}
+section aside .botton .sign {
+  padding: 1rem 2rem;
+  border-radius: 0.2rem;
+  outline: none;
+  border: 1px solid rgb(31, 31, 73);
+  margin: 1rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: rgb(31, 31, 73);
+  color: #fff;
+  margin: 5rem 0;
+  padding: 1rem 2.5rem;
+}/*# sourceMappingURL=verify2.css.map */
